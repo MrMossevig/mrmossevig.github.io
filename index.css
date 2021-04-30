@@ -1,0 +1,20 @@
+
+#veitrafikk_button {
+    overflow: visible;
+    width: 110px;
+}
+
+#veitrafikk_dropdown {
+    display:none;
+    position:absolute;
+    left:0px;
+    z-index:1;
+}
+
+#veitrafikk_button:hover #veitrafikk_dropdown {
+    display:block;
+}
+
+#veitrafikk_dropdown button {
+    width: 110px;
+}

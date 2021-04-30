@@ -9,6 +9,7 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="index.css">
     <title>mossevig.no</title>
     <script>
       function powerBiSetPage(url){
@@ -40,35 +41,41 @@
         </div>
         <div class="row">
           <div class="col s12 center-align">
-            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSectionc35f567e47ed4fe2d05a')">
+            <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSectionc35f567e47ed4fe2d05a')">
               Oversikt
             </button>
-            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection9e5e70305da1041d207e')">
+            <div id="veitrafikk_button" class="btn waves-effect waves-light indigo darken-4">
               Veitrafikk
+              <div id="veitrafikk_dropdown">
+                <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSection9e5e70305da1041d207e')">
+                  Veitrafikk
+                </button>
+                <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSection66a67e1f1b3f7aeecd67')">
+                  Bomring 
+                </button>
+                <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSection3b3f6910c32b6195b163')">
+                  Personbil
+                </button>
+                <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSectiona9dbdf05a4d0802802bb')">
+                  Varebil
+                </button>
+                <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSection255381808004a26d46c8')">
+                  Lastebil
+                </button>
+                <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSectione3a6592912c010ca6e10')">
+                  Buss
+                </button>
+              </div>
+            </div>
+           
+            <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSection645a5fa98d6940c35cc9')">
+              Avfall og forbrenning
             </button>
-            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection66a67e1f1b3f7aeecd67')">
-              Bomring 
+            <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSection46d57309c0ef1fc14596')">
+              Mobil forbrenning
             </button>
-            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection3b3f6910c32b6195b163')">
-              Personbil
-            </button>
-            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSectiona9dbdf05a4d0802802bb')">
-              Varebil
-            </button>
-            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection255381808004a26d46c8')">
-              Lastebil
-            </button>
-            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSectione3a6592912c010ca6e10')">
-              Buss
-            </button>
-            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection645a5fa98d6940c35cc9')">
-              Avfall
-            </button>
-            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection46d57309c0ef1fc14596')">
-              Mobil
-            </button>
-            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection7d69189fcaa7975f909a')">
-              Om
+            <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSection7d69189fcaa7975f909a')">
+              Om klimabarometeret
             </button>
           </div>
         </div>
