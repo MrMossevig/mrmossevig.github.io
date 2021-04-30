@@ -7,21 +7,25 @@
       name="mossevig.no"
     />
 
-        <!-- Compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <title>mossevig.no</title>
-
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>mossevig.no</title>
+    <script>
+      function powerBiSetPage(url){
+        document.getElementById('PowerBI_frame').src = "https://app.powerbi.com/view?r=eyJrIjoiNGUwNjFlNGEtNWFkNi00ZGMxLWE0ZTUtMmFjNzNlOTZkOThhIiwidCI6ImU3YzMzNmUyLWJmZjAtNDZhMC05NTJkLTdhZGNjNTkyMjk5OSIsImMiOjh9&pageName=" + url;
+      }
+    </script>
   </head>
     <body>
     <div id="root" class="container">
       <div class="navbar-fixed">
         <nav class="z-depth-0">
-          <div class="nav-wrapper white">
+          <div class="nav-wrapper white" style="margin-bottom: 100px;">
             <a
               href="/"
               class="brand-logo left grey-text text-darken-3"
             >
-              mossevig.no
+              <img src="love_bandit.png" height=50px/>
             </a>
           </div>
         </nav>
@@ -30,13 +34,47 @@
         <div class="row">
           <div class="col s12 center-align grey-text text-darken-4">
             <h4>
-              Welcome to  <b class="brand-logo">mossevig.no</b>
+              Velkommen til  <b class="brand-logo">Love Bandit Consulting</b>
             </h4>
           </div>
         </div>
         <div class="row">
+          <div class="col s12 center-align">
+            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSectionc35f567e47ed4fe2d05a')">
+              Oversikt
+            </button>
+            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection9e5e70305da1041d207e')">
+              Veitrafikk
+            </button>
+            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection66a67e1f1b3f7aeecd67')">
+              Bomring 
+            </button>
+            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection3b3f6910c32b6195b163')">
+              Personbil
+            </button>
+            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSectiona9dbdf05a4d0802802bb')">
+              Varebil
+            </button>
+            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection255381808004a26d46c8')">
+              Lastebil
+            </button>
+            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSectione3a6592912c010ca6e10')">
+              Buss
+            </button>
+            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection645a5fa98d6940c35cc9')">
+              Avfall
+            </button>
+            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection46d57309c0ef1fc14596')">
+              Mobil
+            </button>
+            <button class="btn indigo darken-4" onclick="powerBiSetPage('ReportSection7d69189fcaa7975f909a')">
+              Om
+            </button>
+          </div>
+        </div>
+        <div class="row">
           <div class="col s12 center-align grey-text text-darken-4">
-            <iframe style="width:60vw; height: 35vw" src="https://app.powerbi.com/view?r=eyJrIjoiNGUwNjFlNGEtNWFkNi00ZGMxLWE0ZTUtMmFjNzNlOTZkOThhIiwidCI6ImU3YzMzNmUyLWJmZjAtNDZhMC05NTJkLTdhZGNjNTkyMjk5OSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+            <iframe id="PowerBI_frame" style="width:60vw; height: 35vw" src="https://app.powerbi.com/view?r=eyJrIjoiNGUwNjFlNGEtNWFkNi00ZGMxLWE0ZTUtMmFjNzNlOTZkOThhIiwidCI6ImU3YzMzNmUyLWJmZjAtNDZhMC05NTJkLTdhZGNjNTkyMjk5OSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
           </div>
         </div>
       </div>
