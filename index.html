@@ -15,6 +15,9 @@
       function powerBiSetPage(url){
         document.getElementById('PowerBI_frame').src = "https://app.powerbi.com/view?r=eyJrIjoiNGUwNjFlNGEtNWFkNi00ZGMxLWE0ZTUtMmFjNzNlOTZkOThhIiwidCI6ImU3YzMzNmUyLWJmZjAtNDZhMC05NTJkLTdhZGNjNTkyMjk5OSIsImMiOjh9&pageName=" + url;
       }
+      function powerBiSetMobilePage(url){
+        document.getElementById('PowerBI_frame').src = "https://app.powerbi.com/view?r=eyJrIjoiZjkwYjMyZTctYzc3YS00Zjg2LTg0OWUtM2YwN2E4YzdmZWY1IiwidCI6ImU3YzMzNmUyLWJmZjAtNDZhMC05NTJkLTdhZGNjNTkyMjk5OSIsImMiOjh9&pageName=" + url;
+      }
     </script>
   </head>
     <body>
@@ -67,7 +70,6 @@
                 </button>
               </div>
             </div>
-           
             <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSection645a5fa98d6940c35cc9')">
               Avfall og forbrenning
             </button>
@@ -77,11 +79,14 @@
             <button class="btn waves-effect waves-light indigo darken-4" onclick="powerBiSetPage('ReportSection7d69189fcaa7975f909a')">
               Om klimabarometeret
             </button>
+            <button class="btn waves-effect waves-light teal darken-3" onclick="powerBiSetMobilePage('')">
+              Mobiltest
+            </button>
           </div>
         </div>
         <div class="row">
           <div class="col s12 center-align grey-text text-darken-4">
-            <iframe id="PowerBI_frame" style="width:60vw; height: 35vw" src="https://app.powerbi.com/view?r=eyJrIjoiNGUwNjFlNGEtNWFkNi00ZGMxLWE0ZTUtMmFjNzNlOTZkOThhIiwidCI6ImU3YzMzNmUyLWJmZjAtNDZhMC05NTJkLTdhZGNjNTkyMjk5OSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+            <iframe id="PowerBI_frame" width="80%" height="1600px" src="https://app.powerbi.com/view?r=eyJrIjoiNGUwNjFlNGEtNWFkNi00ZGMxLWE0ZTUtMmFjNzNlOTZkOThhIiwidCI6ImU3YzMzNmUyLWJmZjAtNDZhMC05NTJkLTdhZGNjNTkyMjk5OSIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
           </div>
         </div>
       </div>
